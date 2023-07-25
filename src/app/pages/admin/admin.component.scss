@@ -1,0 +1,160 @@
+// body {
+//     font-family: Arial, sans-serif;
+//     margin: 0;
+//     padding: 0;
+//     background-color: #f5f5f5;
+//   }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    // padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../../../assets/images/bg/bgPicture.jpg');
+}
+
+//   h1 {
+//     text-align: center;
+//     margin-bottom: 20px;
+//     color: #007BFF;
+//   }
+
+//   form {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   label {
+//     margin-bottom: 5px;
+//   }
+
+//   input,
+//   textarea {
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     transition: border-color 0.3s ease-in-out;
+//   }
+
+//   input:focus,
+//   textarea:focus {
+//     outline: none;
+//     border-color: #007BFF;
+//   }
+
+//   button {
+//     background-color: #007BFF;
+//     color: #fff;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 10px 20px;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease-in-out;
+//   }
+
+//   button:hover {
+//     background-color: #0056b3;
+//   }
+
+//   /* Responsive Styles */
+
+//   @media screen and (min-width: 768px) {
+//     .container {
+//       padding: 40px;
+//     }
+
+//     form {
+//       max-width: 400px;
+//       margin: 0 auto;
+//     }
+//   }
+/* styles.css (or your custom CSS file) */
+
+body {
+  background-size: cover;
+    /* Resize the image to cover the entire container */
+    background-position: center;
+    /* Center the image horizontally and vertically */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    /* Additional background styles can be added here (e.g., background-color, opacity, etc.) */
+}
+
+.beautiful-title {
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-primary {
+    margin: 9px;
+    position: relative;
+    top: -7px;
+}
+
+/* styles.css */
+
+/* Base table styles */
+.table-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling for small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    /* Adjust header cells to make them stack on top of each other */
+    th {
+        display: block;
+    }
+
+    /* Hide table data cells in small screens */
+    td {
+        display: none;
+    }
+
+    /* Display table data cells as blocks */
+    td::before {
+        content: attr(data-label);
+        /* Use data attribute as content for header labels */
+        display: block;
+        font-weight: bold;
+    }
+}
+
+/* styles.css (custom CSS) */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .edit-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .edit-btn i {
+      font-size: 18px;
+      margin-left: 4px;
+    }
+  }
+  
