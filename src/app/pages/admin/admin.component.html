@@ -1,39 +1,70 @@
 <div class="container mt-3">
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="../../../assets/images/employee-icon.svg" alt="Logo">
+      </div>
+      <div class="header-container">
+        <h1 class="logo">Employee Management System</h1>
+        <div class="scrolling-line">
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <h2 class="beautiful-title">Employee Management Form</h2>
-  <h3>Add Employee</h3>
-  <form ngForm="admin">
-    <div class="mb-3 mt-3">
-      <label for="name">Name:</label>
-      <input type="name" class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="employee.name" name="name"
-        required minlength="3" required>
-    </div>
 
-    <div class="mb-3">
-      <label for="designation">Designation:</label>
-      <input [(ngModel)]="employee.designation" type="text" class="form-control" id="des"
-        placeholder="Enter Designation" name="designation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../../../assets/images/bg/empImages.jpg" alt="Image" class="svgLogo">
+      </div>
+      <div class="col-md-6">
+        <form ngForm="admin" class="employee-form">
+          <div class="mb-3 mt-3">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="employee.name" name="name"
+              required minlength="3" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="designation">Designation:</label>
+            <input [(ngModel)]="employee.designation" type="text" class="form-control" id="des"
+              placeholder="Enter Designation" name="designation">
+          </div>
+      
+          <div class="mb-3">
+            <label for="date">Joining Date:</label>
+            <input [(ngModel)]="employee.time" type="date" class="form-control" id="time" placeholder="Enter Joining Date"
+              name="date">
+          </div>
+          <div class="mb-3">
+            <label for="date">Contact Number:</label>
+            <input [(ngModel)]="employee.contact" type="number" class="form-control" id="contact" placeholder="Enter Contact"
+              name="contact">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="name">City:</label>
+            <input type="text" class="form-control" id="city" placeholder="Enter City" [(ngModel)]="employee.city"
+              name="city">
+          </div>
+      
+          <button (click)="storeData()" type="submit" class="btn btn-primary"
+            *ngIf="pageState==='Submit'">{{pageState}}</button>
+          <button (click)="update()" type="submit" class="btn btn-primary" *ngIf="pageState==='Update'">{{pageState}}</button>
+        </form>
+      </div>
+    
+      
     </div>
+  </div>
 
-    <div class="mb-3">
-      <label for="date">Joining Date:</label>
-      <input [(ngModel)]="employee.time" type="date" class="form-control" id="time" placeholder="Enter Joining Date"
-        name="date">
-    </div>
-    <div class="mb-3">
-      <label for="date">Contact Number:</label>
-      <input [(ngModel)]="employee.contact" type="number" class="form-control" id="contact" placeholder="Enter Contact"
-        name="contact">
-    </div>
-    <div class="mb-3 mt-3">
-      <label for="name">City:</label>
-      <input type="text" class="form-control" id="city" placeholder="Enter City" [(ngModel)]="employee.city"
-        name="city">
-    </div>
 
-    <button (click)="storeData()" type="submit" class="btn btn-primary"
-      *ngIf="pageState==='Submit'">{{pageState}}</button>
-    <button (click)="update()" type="submit" class="btn btn-primary" *ngIf="pageState==='Update'">{{pageState}}</button>
-  </form>
+
+
+
+  
   <div class="container">
     <h3>Employee Information</h3>
     <div class="table-responsive">

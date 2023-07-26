@@ -1,160 +1,187 @@
-// body {
-//     font-family: Arial, sans-serif;
-//     margin: 0;
-//     padding: 0;
-//     background-color: #f5f5f5;
-//   }
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    // padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url('../../../assets/images/bg/bgPicture.jpg');
+/* Apply a nice font to the whole form */
+.employee-form {
+  font-family: 'Arial', sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.mt-5 {
+  margin-top: 0px;
+}
+/* Center the form heading */
+.employee-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-//   h1 {
-//     text-align: center;
-//     margin-bottom: 20px;
-//     color: #007BFF;
-//   }
+/* Style the form group to have some spacing between elements */
+.form-group {
+  margin-bottom: 20px;
+}
 
-//   form {
-//     display: flex;
-//     flex-direction: column;
-//   }
+/* Style the label to make it bold and add some spacing */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
 
-//   label {
-//     margin-bottom: 5px;
-//   }
+/* Style the input fields to have some padding and rounded corners */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
 
-//   input,
-//   textarea {
-//     padding: 10px;
-//     border: 1px solid #ccc;
-//     border-radius: 4px;
-//     transition: border-color 0.3s ease-in-out;
-//   }
+/* Style the submit button with a nice color */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
 
-//   input:focus,
-//   textarea:focus {
-//     outline: none;
-//     border-color: #007BFF;
-//   }
+/* Add a hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
 
-//   button {
-//     background-color: #007BFF;
-//     color: #fff;
-//     border: none;
-//     border-radius: 4px;
-//     padding: 10px 20px;
-//     cursor: pointer;
-//     transition: background-color 0.3s ease-in-out;
-//   }
+.employee-form{
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  // background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-//   button:hover {
-//     background-color: #0056b3;
-//   }
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-//   /* Responsive Styles */
+/* Create a responsive layout using flexbox */
+.col-md-6 {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for aesthetics */
+}
 
-//   @media screen and (min-width: 768px) {
-//     .container {
-//       padding: 40px;
-//     }
+/* Add media queries for responsiveness */
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+  .col-md-6 {
+    flex-direction: column; /* Stack the image on top of the text */
+  }
+}
+.header {
+  background-color: #0d0b4e;
+    color: #fff;
+    padding: 20px 0;
+}
 
-//     form {
-//       max-width: 400px;
-//       margin: 0 auto;
-//     }
-//   }
-/* styles.css (or your custom CSS file) */
+/* Center the header content horizontally */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-body {
-  background-size: cover;
-    /* Resize the image to cover the entire container */
-    background-position: center;
-    /* Center the image horizontally and vertically */
-    background-repeat: no-repeat;
-    /* Prevent the image from repeating */
-    /* Additional background styles can be added here (e.g., background-color, opacity, etc.) */
+/* Style the logo */
+.logo img {
+  width: 50px; /* Adjust the logo size as needed */
+  height: 50px; /* Adjust the logo size as needed */
+  margin-left: 28px;
+}
+
+/* Style the company name */
+.company-name h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
 }
 
 .beautiful-title {
-    font-size: 44px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #4CAF50;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #af4c9c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 0px solid #198754;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-.btn-primary {
-    margin: 9px;
-    position: relative;
-    top: -7px;
+/* Center the button container horizontally */
+.button-container {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+.svgLogo{
+  color: white;
 }
 
-/* styles.css */
-
-/* Base table styles */
-.table-container {
-    overflow-x: auto;
-    /* Enable horizontal scrolling for small screens */
+/* Style the custom button */
+.custom-button {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #231e2e;
+  background-color: #d2dae2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 175px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Add a hover effect to the button */
+.custom-button:hover {
+  background-color: #0056b3; /* Change to your desired button background color on hover */
+  transform: translateY(-2px);
 }
 
-th,
-td {
-    padding: 8px;
-    border: 1px solid #ccc;
+/* Add a focus style to the button */
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
 
-    /* Adjust header cells to make them stack on top of each other */
-    th {
-        display: block;
-    }
 
-    /* Hide table data cells in small screens */
-    td {
-        display: none;
-    }
 
-    /* Display table data cells as blocks */
-    td::before {
-        content: attr(data-label);
-        /* Use data attribute as content for header labels */
-        display: block;
-        font-weight: bold;
-    }
-}
 
-/* styles.css (custom CSS) */
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .edit-btn {
-      font-size: 14px;
-      padding: 6px 12px;
-    }
-  
-    .edit-btn i {
-      font-size: 18px;
-      margin-left: 4px;
-    }
-  }
-  
